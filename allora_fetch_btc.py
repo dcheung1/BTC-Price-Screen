@@ -7,7 +7,7 @@ import os
 from urllib3.exceptions import HTTPError
 
 load_dotenv() # read .env once when the module loads
-api_key = os.getenv('CMC_API_KEY')
+api_key = os.getenv('ALLORA_API_KEY')
 url = 'https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest'
 headers = { 'Accepts': 'application/json', 'X-CMC_PRO_API_KEY': api_key,} # standard CMC headers
 
